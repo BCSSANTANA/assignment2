@@ -1,3 +1,6 @@
+Name: Bruno Costa E Silva Santana
+UT EID: bc36435
+
 Setup
 -----
 Install Minikube
