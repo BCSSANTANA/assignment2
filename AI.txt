@@ -1,0 +1,27 @@
+AI tool used: Claude (Anthropic) - Claude Opus 5.5
+
+Debugging prompts/questions:
+
+1. Are these the right steps for part 0 of the assignment? (pasted my minikube start / eval $(minikube docker-env) terminal output and the README)
+2. Why didn't the assignment instructions include the --container-runtime flag on the minikube start command?
+3. (pasted docker images / docker ps -a output) It seems like I don't need the container-runtime flag, am I right? How do I know if it's fine?
+4. (pasted docker build error: "failed to inspect pulled image moby/buildkit:buildx-stable-1: Error response from daemon: 404 page not found") I'm assuming my connection did not work?
+5. Can you explain the --container-runtime flag again and what it does?
+6. For requirement 2, do they mean to modify the name or the image field in greetings.yaml?
+7. (uploaded my screenshots and project files) Asked for a review of my files.
+8. How do I pass the GREETING environment variable?
+9. How do I add a label selector for requirement 7? (pasted my greetings.yaml)
+10. For requirement 6, I thought the indentation had to go after line 12.
+11. What does matchLabels do?
+12. (pasted my greetings.yaml) Do requirements 1-8 look good?
+13. Is the Service type ClusterIP by default?
+14. Do I have to apply the YAML before running kubectl get service greetings? I get an error.
+15. curl http://$10.107.202.190:32767/greetings returns nothing.
+16. I did not add a namespace for the Role, do I have to?
+17. How do I test requirements 9-14?
+18. (pasted kubectl apply errors: Role 'unknown field "metadata.rules"' and a RoleBinding strict decoding error)
+19. (pasted kubectl apply error: RoleBinding 'unknown field "subjects[0].serviceAccount"' and my RoleBinding YAML)
+20. curl http://$MINIKUBE_IP:32767/ fails with "Couldn't connect to server" - what is the issue?
+21. (pasted kubectl get endpoints / kubectl get pods output showing ImagePullBackOff)
+22. Why does curl http://$MINIKUBE_IP:32767/ print "Hello World!"?
+23. Can you generate AI.txt for me?
